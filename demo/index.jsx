@@ -28,7 +28,8 @@ export default class AccordionDemo extends React.Component {
 
     return (
       <div>
-        <h1>Case #1: Default</h1>
+        <h2>Case #1: Default</h2>
+        
         <Accordion>
           {Sections.map((section, index) => {
             return (
@@ -44,7 +45,8 @@ export default class AccordionDemo extends React.Component {
           })}
         </Accordion>
 
-        <h1>Case #2: Show All Sections by Default</h1>
+        <h2>Case #2: Show All Sections by Default</h2>
+        
         <Accordion showAll={true}>
           {Sections.map((section, index) => {
             return (
@@ -60,7 +62,8 @@ export default class AccordionDemo extends React.Component {
           })}
         </Accordion>
 
-        <h1>Case #3: Section Headers set to H2</h1>
+        <h2>Case #3: Section Headers set to H2</h2>
+        
         <Accordion hTag="h2">
           {Sections.map((section, index) => {
             return (
@@ -76,7 +79,8 @@ export default class AccordionDemo extends React.Component {
           })}
         </Accordion>
 
-        <h1>Case #4: Include Divider Lines</h1>
+        <h2>Case #4: Include Divider Lines</h2>
+        
         <Accordion dividers={true}>
           {Sections.map((section, index) => {
             return (

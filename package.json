@@ -1,12 +1,18 @@
 {
-  "name": "accordionlly",
+  "name": "react-accordionlly",
   "version": "1.0.0",
   "description": "An Accessible Accordion React JS Component",
-  "main": "index.js",
+  "main": "./lib/accordion.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lumen Learning",
+  "contributors": [
+    {
+      "name": "Bryan Borgeson",
+      "email": "bryan.borgeson@gmail.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "react": "^0.14.3"
@@ -17,5 +23,16 @@
     "css-loader": "^0.23.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumenlearning/react-accordionlly.git"
+  },
+  "keywords": [
+    "accordion"
+  ],
+  "bugs": {
+    "url": "https://github.com/lumenlearning/react-accordionlly/issues"
+  },
+  "homepage": "https://github.com/lumenlearning/react-accordionlly#readme"
 }

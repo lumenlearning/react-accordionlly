@@ -35,7 +35,7 @@ render() {
       {Sections.map((section, index) => {
         return (
           <AccordionSection key={index} title={`Section ${ section.fruit }`}>
-            Section {index}
+            This is the {section.fruit} Section!
           </AccordionSection>
         )
       })}
@@ -63,9 +63,9 @@ npm install react-accordionlly
 
 ##PropTypes
 
-+ `showAll` (boolean): Users can show all or show none of the sections on page load
-+ `hTag` (string): Users can choose what header (h1, h2, h3, h4, h5, h6) the accordion section title should be (for accessibility)
-+ `dividers` (boolean): Users can choose to have dividers between each section
++ `showAll` (boolean): Users can show all or show none of the sections on page load (default: `false`)
++ `hTag` (string): Users can choose what header (h1, h2, h3, h4, h5, h6) the accordion section title should be (default: `h3`)
++ `dividers` (boolean): Users can choose to have dividers between each section (default: `false`)
 
 ##License
 
