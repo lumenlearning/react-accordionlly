@@ -18,31 +18,80 @@ export default class AccordionDemo extends React.Component {
         id: 2,
         fruit: "Banana",
         description: "Bananas are in the shape of a long curving cylinder. The bottom end narrows to a point and the top end has a thick stem that attaches the fruit to the inflorescence stalk.  A small group of bananas is termed \"hands\".  Hands are collectively known as \"bunches\". Banana skin is smooth and thick, and often has a few vertical ridges that run the length of the fruit. The flesh is creamy white and soft."
-
       },
       {
         id: 3,
         fruit: "Clementine",
         description: "A clementine is a hybrid between a Mediterranean Citrus ×deliciosa and a sweet orange, so named in 1902. The exterior is a deep orange colour with a smooth, glossy appearance. Clementines can be separated into 7 to 14 segments. Similarly to tangerines, they tend to be easy to peel."
-
       }
     ];
 
     return (
-      <Accordion showAll={true} hTag={'h2'} dividers={true}>
-        {Sections.map((section, index) => {
-          return (
-            <AccordionSection key={index} title={`Section ${ section.fruit }`}>
-              <p>
-                This is the {section.fruit} Section!
-              </p>
-              <p>
-                {section.description}
-              </p>
-            </AccordionSection>
-          )
-        })}
-      </Accordion>
+      <div>
+        <h1>Case #1: Default</h1>
+        <Accordion>
+          {Sections.map((section, index) => {
+            return (
+              <AccordionSection key={index} title={`Section ${ section.fruit }`}>
+                <p>
+                  This is the {section.fruit} Section!
+                </p>
+                <p>
+                  {section.description}
+                </p>
+              </AccordionSection>
+            )
+          })}
+        </Accordion>
+
+        <h1>Case #2: Show All Sections by Default</h1>
+        <Accordion showAll={true}>
+          {Sections.map((section, index) => {
+            return (
+              <AccordionSection key={index} title={`Section ${ section.fruit }`}>
+                <p>
+                  This is the {section.fruit} Section!
+                </p>
+                <p>
+                  {section.description}
+                </p>
+              </AccordionSection>
+            )
+          })}
+        </Accordion>
+
+        <h1>Case #3: Section Headers set to H2</h1>
+        <Accordion hTag="h2">
+          {Sections.map((section, index) => {
+            return (
+              <AccordionSection key={index} title={`Section ${ section.fruit }`}>
+                <p>
+                  This is the {section.fruit} Section!
+                </p>
+                <p>
+                  {section.description}
+                </p>
+              </AccordionSection>
+            )
+          })}
+        </Accordion>
+
+        <h1>Case #4: Include Divider Lines</h1>
+        <Accordion dividers={true}>
+          {Sections.map((section, index) => {
+            return (
+              <AccordionSection key={index} title={`Section ${ section.fruit }`}>
+                <p>
+                  This is the {section.fruit} Section!
+                </p>
+                <p>
+                  {section.description}
+                </p>
+              </AccordionSection>
+            )
+          })}
+        </Accordion>
+      </div>
     );
   }
 
