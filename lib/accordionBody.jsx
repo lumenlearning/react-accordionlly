@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import ReactDOM                        from 'react-dom';
 
 export default class AccordionBody extends Component {
 
@@ -20,7 +21,7 @@ export default class AccordionBody extends Component {
     }
 
     // Listen for transition to end before setting overflow
-    var bodyNode = React.findDOMNode(this.refs.body);
+    var bodyNode = ReactDOM.findDOMNode(this.refs.body);
 
     bodyNode.addEventListener('transitionend', () => {
       this.setState({
@@ -37,7 +38,7 @@ export default class AccordionBody extends Component {
   }
 
   setMaxHeight() {
-    var bodyNode = React.findDOMNode(this.refs.body);
+    var bodyNode = ReactDOM.findDOMNode(this.refs.body);
 
     this.setState({
       maxHeight: this.props.expanded ? bodyNode.scrollHeight + 'px' : 0,

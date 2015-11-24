@@ -22,17 +22,9 @@ hr {
 }
 
 .react-accordionlly-section-title {
-  /* POSITION */
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-
-  /* TEXT STYLING */
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: .15em;
-  margin: 12px 0;
-  text-transform: uppercase;
 }
 
 .space {
