@@ -1,0 +1,39 @@
+hr {
+  margin: 0;
+}
+
+.react-accordionlly-section-title-wrapper {
+  cursor: pointer;
+
+  display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+  display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+  user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.react-accordionlly-section-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.space {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+}
+
+.react-accordionlly-section-title-toggle-indicator {
+  display: inline-block;
+  vertical-align: text-top;
+  align: right;
+}
