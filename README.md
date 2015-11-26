@@ -59,7 +59,10 @@ Install using Node Package Manager (npm):
 
 ```
 npm install react-accordionlly
+npm install style-loader css-loader --save-dev
 ```
+
+*The style-loader is necessary as this component uses css styling, primarily for the arrow indicators in the section heading.*
 
 ##PropTypes
 
