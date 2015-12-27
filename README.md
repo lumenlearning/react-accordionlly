@@ -49,6 +49,12 @@ render() {
 
 ```
 
+##PropTypes
+
++ `showAll` (boolean): Users can show all or show none of the sections on page load (default: `false`)
++ `hTag` (string): Users can choose what header (h1, h2, h3, h4, h5, h6) the accordion section title should be (default: `h3`)
++ `dividers` (boolean): Users can choose to have dividers between each section (default: `false`)
+
 ##Motivation
 
 At the time of initial development, there were few, if any, accordion components that offered the flexibility and accessibility that was required for the larger project the component was to be used in. The accordion needed to consume data from an API and populate the sections accordingly. Each section also needed to have the ability to change size in order to fit dynamic and interactive page elements that, when clicked within a section, would show or hide in a visibly pleasing way. Finally, it needed to comply with a11y web accessibility standards.
@@ -64,11 +70,13 @@ npm install style-loader css-loader --save-dev
 
 *The style-loader is necessary as this component uses css styling, primarily for the arrow indicators in the section heading.*
 
-##PropTypes
+##Demo
 
-+ `showAll` (boolean): Users can show all or show none of the sections on page load (default: `false`)
-+ `hTag` (string): Users can choose what header (h1, h2, h3, h4, h5, h6) the accordion section title should be (default: `h3`)
-+ `dividers` (boolean): Users can choose to have dividers between each section (default: `false`)
+Follow these steps to get a basic demo of this module running on your local machine:
+
+1. Clone the project and `cd` into it.
+2. Run `npm install` and wait while it installs all of its dependencies.
+3. Run `webpack-dev-server --content-base ./` and navigate to `localhost:8080/demo/` in your browser and you should see an unstyled page with four "cases" demonstrating the different prop values you can pass in.
 
 ##License
 
