@@ -1,6 +1,6 @@
 {
   "name": "react-accordionlly",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An Accessible Accordion React JS Component",
   "main": "./dist/accordion.js",
   "scripts": {
